@@ -1,5 +1,5 @@
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+const baseURL = "https://www.tiagobreunig.com/";
 
 const routes = {
   "/": true,
@@ -12,7 +12,7 @@ const routes = {
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": false,
+  "work/projects/Smart-Lighting-Controller-with-ESP32.mdx": false,
 };
 
 import { Geist } from "next/font/google";

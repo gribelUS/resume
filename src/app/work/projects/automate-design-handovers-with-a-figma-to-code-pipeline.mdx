@@ -1,44 +1,47 @@
 ---
-title: "Automating Design Handovers with a Figma to Code Pipeline"
-publishedAt: "2024-04-01"
-summary: "Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think."
+title: "Red Tiger, a Computer Hardware web-based marketplace"
+publishedAt: "2025-05-05"
+summary: "Red Tiger is a full-stack e-commerce web application built with Django that simulates a functional online marketplace. The platform allows users to register, browse products, manage shopping carts, and complete purchases through a secure checkout process."
 images:
   - "/images/projects/project-01/cover-02.jpg"
   - "/images/projects/project-01/image-03.jpg"
 team:
-  - name: "John Doe"
+  - name: "Joseph Houser"
     role: "Software Engineer"
     avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+    linkedIn: "https://www.linkedin.com/in/jrhauser/"
 link: "https://once-ui.com/"
 ---
 
 ## Overview
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+This project was designed for academic purposes in a Database Design and Theory class, and accomplished with a team of two developers including myself, and one person handling documentation.
 
 ## Key Features
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **User Authentication System**: Enables users to register, log in, and manage sessions securely using Django's built-in authentication framework.
+- **Product Listing and Search**: Displays available products in a structured catalog with search and filtering capabilities for easy navegation.
+- **Shopping Cart Functionality**: Allows users to add, update, or remove items from their cart, with cart data maintained across sessions and warning for socket incompatibility between motherboard and processor.
 
 ## Technologies Used
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Python**: Powers the backend logic, data processing, and custom scripts for database operations.
+- **MySQL**: Used as the relational database to store user data, product listings, and transactions.
+- **Django**: Serves as the core web framework, handling user authentication, routing, and business logic.
+- **Bootstrap**: Provides responsive design and prebuilt UI components for a consistent layout.
+- **HTML/CSS**: Structures and styles the frontend interface of the marketplace.
+- **JavaScript**: Adds interactivity to dynamic page elements like modals and form handling.
+- **Git/GitHub: Used for version control and team collaboration.
 
 ## Challenges and Learnings
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+One of the main challenges in building the Red Tiger marketplace was implementing a robust and consistent process to handle transactions, inventory update, and connecting the correct data between users (buyer and seller).
+Another significant learning was ensuring data and coding structure consistency for eficient development and version control.
 
 ## Outcome
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+The project successfully delivers a functioning e-commerce platform where users can create accounts, browse and filter products, and add items to their carts. Key technical outcomes include a responsive frontend using Bootstrap, a well-structured backend in Django, and optimized database operations via raw SQL.
 
 ---
 
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+This project showcases the ability to build full-stack systems, handle real-world data flow, and integrate performance optimizations-essential skills for modern web development and software engineering roles.

@@ -144,8 +144,13 @@ const about = {
     institutions: [
       {
         name: "West Virginia University",
-        description: [<>Bachelor of Science (BS) in Computer Engineering</>,
-          <>Bachelor of Science in Computer Science</>,
+        description: [
+          <>
+          Bachelor of Science in Computer Engineering (B.S.Cp.E)
+          </>,
+          <>
+          Bachelor of Science in Computer Science (B.S.C.S)
+          </>,
         ],
         timeframe: "2022 - Present",
       },

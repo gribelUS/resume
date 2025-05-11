@@ -147,14 +147,10 @@ const about = {
         description: <>Bachelor of Science (BS) in Computer Engineering, Bachelor of Science in Computer Science </>,
         timeframe: "2022 - Present",
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
     ],
   },
   technical: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {

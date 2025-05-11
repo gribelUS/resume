@@ -148,6 +148,7 @@ const about = {
           <>
           Bachelor of Science in Computer Engineering (B.S.Cp.E)
           </>,
+          <br />,
           <>
           Bachelor of Science in Computer Science (B.S.C.S)
           </>,

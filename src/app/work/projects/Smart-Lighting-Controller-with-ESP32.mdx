@@ -1,0 +1,50 @@
+---
+title: "Smart Lighting Controller with ESP32"
+publishedAt: "2025-05-11"
+summary: "Development of an ESP32-based automation system for light control using motion and brightness sensing, manual override, and Wi-Fi status feedback."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+  - "/images/projects/project-01/cover-02.jpg"
+  - "/images/projects/project-01/cover-03.jpg"
+  - "/images/projects/project-01/cover-04.jpg"
+team:
+  - name: "Tiago Breunig"
+    role: "Automation Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/tiago-carlos-breunig/"
+
+---
+
+## Overview
+
+A smart home lighting controller that automates room lighting using motion and light intensity sensing. The system is powered by an ESP32 and is designed to operate either in series or parallell with a traditional wall switch, preserving manual control while adding intelligent behavior and remote capabilities.
+
+## Key Features
+
+- **ESP32-Based Control**: The ESP32-WROOM-32 handles all processing and Wi-Fi communication, enabling smart automation and status feedback.
+- **Light Intensity Sensing**: A BH1750 sensor detects ambient light to decide whether artificial lighting is needed, reducing unnecessary energy use.
+- **Motion Detection**: The AM312 PIR sensor activates lights only when presence is detected, depending on the ambient light level, improving efficiency and convenience.
+- **OLED Display**: A 128x64 screen provides real-time feedback including light levels, motion detection, and Wi-Fi connection status.
+- **Status LEDs**: Two onboard LEDs indicate power status and Wi-Fi connection success for easy debugging and user awareness in case of probles with the OLED screen.
+- **Series/Parallell Wall Switch Integration**: The system can be wired in series or parallell with a conventional wall switch depending on usability preference.
+- **Light dimming with Potentiometer**: A potentiometer present allows for the user to manually overide the set preferences for different light needs for specific needs.
+- **Custom PCB Design**: Designed the circuit board using **KiCad** and fabricated it using the **LPKF Protolaser ST PCB Laser Structuring System**, resulting in a compact, professional-grade layout.
+- **3D-Printed Enclosure**: Created a custom wall-mountable enclosure for the system using 3D modeling software and printed it to fit all components securely, with rear-mounted screws for a clean look.
+
+## Technologies Used
+
+- **ESP32-WROOM-32**: For processing and Wi-Fi communication.
+- **BH1750**: Digital light sensor for ambient brightness detection.
+- **AM312 PIR Sensor**: For motion detection.
+- **SSD1306**: OLED Display module for system feedback.
+- **Arduino Framework**: Used to program and control the ESP32.
+- **Wi-Fi**: Enables connected functionality and future expandability.
+- **KiCad + LPKF Protolaser ST**: For PCB design and rapid fabrication.
+
+## Challenges and Learnings
+
+A key challenge was ensuring reliable and stable conversion of the 120VAC provided by the main line into the 3.3VDC required by the ESP32 and sensors used, especially given the noisy nature of AC power. Carefully filtering and capacitor selection was essential. Additionaly, it was specially challanging to design a PCB utilizing a modular approach to allow future expansion of sensors and functionalities available.
+
+## Outcome
+
+The resulting system offers seamless lighting automation with local control preserver. It demonstrates a practical, low-cost method of enhancing conventional room lighting with smart behavior-ideal for home automation. The combination of PCB design, embedded programming, and mechanical enclosure showcases a complete end-to-end product development cycle.

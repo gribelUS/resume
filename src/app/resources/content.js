@@ -59,7 +59,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Smart Lighting</strong></>,
-    href: "work/Smart-Lighting-Controller-with-ESP32.mdx",
+    href: "/work/Smart-Lighting-Controller-with-ESP32",
   },
   subline: (
     <>

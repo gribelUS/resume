@@ -144,7 +144,9 @@ const about = {
     institutions: [
       {
         name: "West Virginia University",
-        description: <>Bachelor of Science (BS) in Computer Engineering, Bachelor of Science in Computer Science </>,
+        description: [<>Bachelor of Science (BS) in Computer Engineering</>,
+          <>Bachelor of Science in Computer Science</>,
+        ],
         timeframe: "2022 - Present",
       },
     ],

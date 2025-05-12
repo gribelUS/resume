@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { getPosts } from "@/app/utils/utils";
-import { AvatarGroup, Button, Column, Flex, Heading, SmartImage, Text } from "@/once-ui/components";
+import { AvatarGroup, Button, Column, Flex, Heading, Carousel, Text } from "@/once-ui/components"; // Updated import
 import { baseURL } from "@/app/resources";
 import { about, person, work } from "@/app/resources/content";
 import { formatDate } from "@/app/utils/formatDate";
@@ -24,7 +24,7 @@ export async function generateMetadata({
   const routeParams = await params;
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
 
-  const posts = getPosts(["src", "app", "work", "projects"])
+  const posts = getPosts(["src", "app", "work", "projects"]);
   let post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -39,7 +39,7 @@ export async function generateMetadata({
 }
 
 export default async function Project({
-  params
+  params,
 }: { params: Promise<{ slug: string | string[] }> }) {
   const routeParams = await params;
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
@@ -79,12 +79,13 @@ export default async function Project({
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
       {post.metadata.images.length > 0 && (
-        <SmartImage
-          priority
+        <Carousel
+          sizes="(max-width: 960px) 100vw, 960px"
+          images={post.metadata.images.map((image) => ({
+            src: image,
+            alt: post.metadata.title,
+          }))}
           aspectRatio="16 / 9"
-          radius="m"
-          alt="image"
-          src={post.metadata.images[0]}
         />
       )}
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">

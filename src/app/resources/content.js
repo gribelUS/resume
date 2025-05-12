@@ -90,8 +90,8 @@ const about = {
     description: (
       <>
         I am a computer engineering and computer science student at West Virginia University with a 
-        passion for projects that can solve real-world problems. The goal my personal projects is to
-        deepen my knwledge in the bridge between software and hardware to create innovative solutions
+        passion for projects that can solve real-world problems. The goal with my personal projects is to
+        deepen my knowledge in the communication between software and hardware to create innovative solutions
         both in the dosmetic and industrial fields.
       </>
     ),

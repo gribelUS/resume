@@ -12,7 +12,7 @@ interface ElementTypeProps {
   [key: string]: any;
 }
 
-const isExternalLink = (url: string) => /^https?:\/\//.test(url);
+const isExternalLink = (url: string) => /^https?:\/\//.test(url) || (url.startsWith("/") && url.endsWith(".pdf"));
 
 const ElementType = forwardRef<HTMLElement, ElementTypeProps>(
   ({ href, type, onClick, onLinkClick, children, className, style, ...props }, ref) => {
@@ -23,7 +23,7 @@ const ElementType = forwardRef<HTMLElement, ElementTypeProps>(
           <a
             href={href}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             ref={ref as React.Ref<HTMLAnchorElement>}
             className={className}
             style={style}

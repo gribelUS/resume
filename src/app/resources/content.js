@@ -38,14 +38,14 @@ const social = [
     link: "https://www.linkedin.com/in/tiago-carlos-breunig/",
   },
   {
-    name: "Resume",
-    icon: "document",
-    link: "/Tiago_Breunig_Resume.pdf",
-  },
-  {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
+  },
+    {
+    name: "Resume",
+    icon: "document",
+    link: "/Tiago_Breunig_Resume.pdf",
   },
 ];
 

@@ -8,6 +8,7 @@ import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 import { Metadata } from "next";
 import { Meta, Schema } from "@/once-ui/modules";
+import '@google/model-viewer';
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "work", "projects"]);
@@ -55,6 +56,9 @@ export default async function Project({
       src: person.avatar,
     })) || [];
 
+  // Support for 3D model
+  const model = post.metadata.model;
+
   return (
     <Column as="section" maxWidth="m" horizontal="center" gap="l">
       <Schema
@@ -78,6 +82,16 @@ export default async function Project({
         </Button>
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
+      {/* Render 3D model if present */}
+      {model && model.obj && model.mtl && (
+        <model-viewer
+          src={model.obj}
+          mtl={model.mtl}
+          camera-controls
+          auto-rotate
+          style={{ width: '100%', height: '400px', marginBottom: '2rem' }}
+        />
+      )}
       {post.metadata.images.length > 0 && (
         <Carousel
           sizes="(max-width: 960px) 100vw, 960px"

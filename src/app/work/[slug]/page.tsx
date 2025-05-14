@@ -10,20 +10,6 @@ import { Metadata } from "next";
 import { Meta, Schema } from "@/once-ui/modules";
 import '@google/model-viewer';
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'model-viewer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
-        src?: string;
-        mtl?: string;
-        'camera-controls'?: boolean;
-        'auto-rotate'?: boolean;
-        style?: React.CSSProperties;
-      };
-    }
-  }
-}
-
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = getPosts(["src", "app", "work", "projects"]);
   return posts.map((post) => ({

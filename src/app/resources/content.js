@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Tiago, a computer engineering and computer science student at West Virginia University and a technology enthusiast.
+      I'm Tiago, a computer engineering student at West Virginia University and a technology enthusiast.
     </>
   ),
 };
@@ -89,10 +89,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I am a computer engineering and computer science student at West Virginia University with a 
-        passion for projects that can solve real-world problems. The goal with my personal projects is to
-        deepen my knowledge in the communication between software and hardware to create innovative solutions
-        both in the dosmetic and industrial fields.
+        I am a computer engineering student at West Virginia University with a passion for projects that can
+        solve real-world problems. The goal with my personal projects is to deepen my knowledge in the
+        communication between software and hardware to create innovative solutions both in the domestic
+        and industrial fields.
       </>
     ),
   },
@@ -100,6 +100,20 @@ const about = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+      {
+        company: "WVU Lane Department of Computer Science and Electrical Engineering",
+        timeframe: "June 2025 - Present",
+        role: "Undergraduate Research Assistant",
+        achievements: [
+          <>
+            Developed a User Interface enabling streamlined operation and comprehensive data logging within an industrial 
+            automation system, utilizing Python and relevant GUI frameworks.
+          </>,
+          <>
+            Developed UR robot programs to interface with a conveyor system for automated package unloading and palletizing.
+          </>
+        ]
+      },
       {
         company: "Supermercado Breunig",
         timeframe: "2019 - 2022",
@@ -149,9 +163,6 @@ const about = {
           Bachelor of Science in Computer Engineering (B.S.Cp.E)
           </>,
           <br />,
-          <>
-          Bachelor of Science in Computer Science (B.S.C.S)
-          </>,
         ],
         timeframe: "2022 - Present",
       },

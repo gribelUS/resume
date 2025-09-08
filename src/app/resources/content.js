@@ -162,7 +162,6 @@ const about = {
           <>
           Bachelor of Science in Computer Engineering (B.S.Cp.E)
           </>,
-          <br />,
         ],
         timeframe: "2022 - Present",
       },

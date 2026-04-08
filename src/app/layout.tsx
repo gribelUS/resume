@@ -6,10 +6,16 @@ import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style, font, home } from "@/app/resources";
 
-import { Background, Column, Flex, ThemeProvider, ToastProvider } from "@/once-ui/components";
+import {
+  Background,
+  Column,
+  Flex,
+  ThemeProvider,
+  ToastProvider,
+} from "@/once-ui/components";
 import { opacity, SpacingToken } from "@/once-ui/types";
 import { Meta } from "@/once-ui/modules";
-import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -71,14 +77,20 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       </head>
       <ThemeProvider>
         <ToastProvider>
-          <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
+          <Column
+            style={{ minHeight: "100vh" }}
+            as="body"
+            fillWidth
+            margin="0"
+            padding="0"
+          >
             <Background
               position="fixed"
               mask={{
                 x: effects.mask.x,
                 y: effects.mask.y,
                 radius: effects.mask.radius,
-                cursor: effects.mask.cursor
+                cursor: effects.mask.cursor,
               }}
               gradient={{
                 display: effects.gradient.display,
@@ -128,7 +140,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
               </Flex>
             </Flex>
             <Footer />
-            <Analytics />
+            <SpeedInsights />
           </Column>
         </ToastProvider>
       </ThemeProvider>

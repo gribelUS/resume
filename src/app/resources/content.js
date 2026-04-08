@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
@@ -42,7 +42,7 @@ const social = [
     icon: "email",
     link: `mailto:${person.email}`,
   },
-    {
+  {
     name: "Resume",
     icon: "document",
     link: "/Tiago_Breunig_Resume.pdf",
@@ -58,12 +58,17 @@ const home = {
   headline: <>Building bridges between hardware and software</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Smart Lighting</strong></>,
+    title: (
+      <>
+        Recent project: <strong className="ml-4">Smart Lighting</strong>
+      </>
+    ),
     href: "/work/Smart-Lighting-Controller-with-ESP32",
   },
   subline: (
     <>
-      I'm Tiago, a computer engineering student at West Virginia University and a technology enthusiast.
+      I'm Tiago, a computer engineering student at West Virginia University and
+      a technology enthusiast.
     </>
   ),
 };
@@ -89,10 +94,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I am a computer engineering student at West Virginia University with a passion for projects that can
-        solve real-world problems. The goal with my personal projects is to deepen my knowledge in the
-        communication between software and hardware to create innovative solutions both in the domestic
-        and industrial fields.
+        I am a computer engineering student at West Virginia University with a
+        passion for projects that can solve real-world problems. The goal with
+        my personal projects is to deepen my knowledge in the communication
+        between software and hardware to create innovative solutions both in the
+        domestic and industrial fields.
       </>
     ),
   },
@@ -101,33 +107,30 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "WVU Lane Department of Computer Science and Electrical Engineering",
+        company:
+          "WVU Lane Department of Computer Science and Electrical Engineering",
         timeframe: "June 2025 - Present",
         role: "Undergraduate Research Assistant",
         achievements: [
           <>
-            Developed a User Interface enabling streamlined operation and comprehensive data logging within an industrial 
-            automation system, utilizing Python and relevant GUI frameworks.
+            Developed a User Interface enabling streamlined operation and
+            comprehensive data logging within an industrial automation system,
+            utilizing Python and relevant GUI frameworks.
           </>,
           <>
-            Developed UR robot programs to interface with a conveyor system for automated package unloading and palletizing.
-          </>
-        ]
+            Developed UR robot programs to interface with a conveyor system for
+            automated package unloading and palletizing.
+          </>,
+        ],
       },
       {
         company: "Supermercado Breunig",
         timeframe: "2019 - 2022",
         role: "IT Support",
         achievements: [
-          <>
-            Diagnosed and resolved hardware and software issues.
-          </>,
-          <>
-            Guided users with technical issues and troubleshooting.
-          </>,
-          <>
-            Provided step-by-step guides and remote support for users.
-          </>,
+          <>Diagnosed and resolved hardware and software issues.</>,
+          <>Guided users with technical issues and troubleshooting.</>,
+          <>Provided step-by-step guides and remote support for users.</>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -139,13 +142,14 @@ const about = {
         role: "Freelancer IT Technician",
         achievements: [
           <>
-            Assisted in the assembly and installation of a CNC machine for stone engraving
-            that allowed for automization of the engraving process and increased production
-            efficiency.
+            Assisted in the assembly and installation of a CNC machine for stone
+            engraving that allowed for automation of the engraving process and
+            increased production efficiency.
           </>,
           <>
-            Trained employees on the use of the machines software, conversion, and adjustment
-            of client provided files to the machine's requirements.
+            Trained employees on the use of the machines software, conversion,
+            and adjustment of client provided files to the machine's
+            requirements.
           </>,
         ],
         images: [],
@@ -159,9 +163,7 @@ const about = {
       {
         name: "West Virginia University",
         description: [
-          <>
-          Bachelor of Science in Computer Engineering (B.S.Cp.E)
-          </>,
+          <>Bachelor of Science in Computer Engineering (B.S.Cp.E)</>,
         ],
         timeframe: "2022 - Present",
       },
@@ -173,23 +175,36 @@ const about = {
     skills: [
       {
         title: "Python, JavaScript, SQL",
-        description: <>Able to integrate database structures into interactive applications
-                       using Python and JavaScript.</>,
+        description: (
+          <>
+            Able to integrate database structures into interactive applications
+            using Python and JavaScript.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
+        images: [],
       },
       {
         title: "C, VHDL, Verilog",
-        description: <>Proficient in low-level C programming and hardware descriptive
-                       languages for embedded devices in automation and control applications.</>,
+        description: (
+          <>
+            Proficient in low-level C programming and hardware descriptive
+            languages for embedded devices in automation and control
+            applications.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
-        images: [
-        ],
+        images: [],
       },
       {
         title: "FPGA, Microcontrollers, UART, PLCs",
-        description: <>Hands-on experience designing digital logic on FPGA boards, implementing UART communication protocols, and developing ladder logic for PLC-based automation systems.</>,
+        description: (
+          <>
+            Hands-on experience designing digital logic on FPGA boards,
+            implementing UART communication protocols, and developing ladder
+            logic for PLC-based automation systems.
+          </>
+        ),
         images: [],
       },
     ],
